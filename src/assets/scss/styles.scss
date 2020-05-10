@@ -41,9 +41,49 @@
 @import 'utilities';
 @import 'print';
 
-.brand-text-icon {
-	font-style: 26px;
-	font-weight: 500;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
 	font-family: 'Poppins', sans-serif;
+}
+
+.brand-text-icon {
+	font-size: 26px;
+	font-weight: 500;
 	color: $primary;
+
+	&:hover {
+		color: $primary;
+		text-decoration: none;
+	}
+}
+
+header {
+	border-bottom: 1px solid $gray-200;
+	width: 100%;
+	position: relative;
+
+	.navbar {
+		height: 80px;
+
+		ul.navbar-nav {
+			li.nav-item {
+				&.active {
+					a.nav-link {
+						color: $primary;
+					}
+				}
+				a {
+					&.nav-link {
+						letter-spacing: 1px;
+						color: $gray-900;
+						padding: 0 1rem;
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+		}
+	}
 }
