@@ -15,7 +15,7 @@ const MostPicked = (props) => {
 							}`}>
 							<div className='card card-featured'>
 								<div className='tag'>
-									${item.price}
+									${item.price}{' '}
 									<span className='font-weight-light'>
 										per {item.unit}
 									</span>
