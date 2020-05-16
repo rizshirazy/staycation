@@ -6,6 +6,7 @@
  */
 
 @import 'functions';
+@import 'color-variables';
 @import 'variables';
 @import 'mixins';
 @import 'root';
@@ -201,4 +202,10 @@ section {
 			transform: scale(1);
 		}
 	}
+}
+
+.testimonial-hero,
+.testimonial-hero img {
+	width: 365px;
+	height: 500px;
 }
