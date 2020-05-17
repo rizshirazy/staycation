@@ -29,7 +29,7 @@ const MostPicked = (props) => {
 								</figure>
 								<div className='meta-wrapper'>
 									<Button
-										className='stretched-lick d-block text-white'
+										className='stretched-link d-block text-white'
 										type='link'
 										href={`/proprerties/${item._id}`}>
 										<h5>{item.name}</h5>
