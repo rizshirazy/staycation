@@ -4,6 +4,7 @@ import PageDetailTitle from 'partials/PageDetailTitle';
 
 import itemDetails from 'json/itemDetails.json';
 import FeaturedImage from 'partials/FeaturedImage';
+import PageDetailDescription from 'partials/PageDetailDescription';
 
 export default class DetailPage extends Component {
 	componentDidMount() {
@@ -22,6 +23,14 @@ export default class DetailPage extends Component {
 				<Header {...this.props} />
 				<PageDetailTitle data={itemDetails} breadcrumb={breadcrumb} />
 				<FeaturedImage data={itemDetails.imageUrls} />
+				<div className='container'>
+					<div className='row'>
+						<div className='col-7 pr-5'>
+							<PageDetailDescription data={itemDetails} />
+						</div>
+						<div className='col-5'></div>
+					</div>
+				</div>
 			</>
 		);
 	}
